@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
+
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	/* 1 */
+	border-width: 0;
+	/* 2 */
+	border-style: solid;
+	/* 2 */
+	border-color: #e5e7eb;
+	/* 2 */
+}
+
+h1,
+h2,
+p {
+	margin: 0;
+}
+
+body {
+	margin: 0;
+	width: 100%;
+	position: relative;
+	font-family: "Poppins", sans-serif;
+	font-size: 0.8rem;
+	color: white;
+	background-color: rgba(47, 45, 51, 1);
+}
+
+/* Seccion Hero */
+
+#hero {
+	height: calc(100vh - 4rem);
+	background-image: url(imgs/responsive2.png);
+	background-color: rgba(47, 45, 51, 1);
+	background-position: center;
+	background-size: cover;
+	padding: 0 1rem;
+	display: flex;
+	justify-content: center;
+}
+
+#hero-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1rem;
+	z-index: 10;
+}
+
+#titulo {
+	font-size: 3rem;
+	background: -webkit-linear-gradient(60deg, #c3c9a1, #dc33c1);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#texto {
+	font-family: "Fira Code", monospace;
+	font-size: 1rem;
+}
+
+#scroll-down {
+	display: flex;
+	width: 40%;
+	align-items: end;
+	justify-content: end;
+}
+
+.scroll-icon {
+	height: 2.5rem;
+	color: white;
+}
+
+.seccion {
+	padding: 0 1rem;
+	margin-top: 3rem;
+}
+
+/* Seccion habilidades */
+
+.subtitulo {
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+
+.nombre {
+	font-size: 1rem;
+}
+
+#skill-box {
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2.3rem;
+	height: fit-content;
+	padding: 1rem;
+	background: rgba(255, 255, 255, 0.22);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(4.7px);
+	-webkit-backdrop-filter: blur(4.7px);
+	border: 1px solid rgba(255, 255, 255, 0.57);
+	font-family: "Fira Code", monospace;
+	font-weight: 100;
+}
+
+.skill-text{
+	font-size: 1rem;
+}
+.box:hover {
+	border: 1px solid #e274a2;
+	color: #e274a2;
+	background-color: transparent;
+}
+
+.icono {
+	height: 4rem;
+}
+
+/* Seccion Proyectos */
+
+#work-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 3rem;
+	gap: 1.5rem;
+}
+
+.imagen {
+	width: 100%;
+	border-radius: 16px;
+	opacity: 0.5;
+}
+
+.imagen:hover {
+	opacity: 1;
+	color: #dc33c1;
+}
+
+.caja:hover {
+	color: #e274a2;
+}
+
+/* Seccion contacto  */
+#iconos {
+	display: flex;
+	justify-content: center;
+	padding: 1rem 3rem;
+	gap: 1rem;
+}
+
+.contact-icon {
+	height: 2.5rem;
+	opacity: 0.4;
+}
+
+.contact-icon:hover {
+	opacity: 1;
+}
+
+
+@media (min-width: 640px) {
+	#hero {
+		background-image: url(imgs/Frame\ 1.png);
+	}
+	#hero-container {
+		padding: 0;
+		width: 50%;
+	}
+
+	.seccion {
+		margin: 5rem;
+	}
+
+	#skill-box {
+		padding: 1rem;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.box {
+		width: 30%;
+	}
+
+	.listatareas {
+		width: 50%;
+	}
+
+	#work-container {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-top: 3rem;
+		gap: 1.5rem;
+	}
+}
